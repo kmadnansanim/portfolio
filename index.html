@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDIT: page title and description (shown in the browser tab and in Google results) -->
+  <title>Adnan Sanim - Building My Way Into Software</title>
+  <meta name="description" content="Adnan Sanim is a software engineering student building web apps and systems tools. Building My Way Into Software.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adnan Sanim - Building My Way Into Software">
+  <meta property="og:description" content="Software engineering student. Building My Way Into Software. Projects, experience and contact details.">
+
+  <!-- Small "A" favicon drawn in code, so you don't need an image file -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f5f5f5'/%3E%3Cpath d='M9 24 16 8l7 16M12 19h8' fill='none' stroke='%23000' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <!-- Font: Schibsted Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+
+  <!-- Tells the stylesheet that JavaScript is available -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header" id="top">
+    <div class="wrap site-header__inner">
+      <!-- EDIT: your name -->
+      <a class="brand" href="#top" aria-label="Adnan Sanim, back to top">Adnan Sanim</a>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li class="nav__item" style="--i:0"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item" style="--i:1"><a class="nav__link" href="#experience">Experience</a></li>
+          <li class="nav__item" style="--i:2"><a class="nav__link" href="#education">Education</a></li>
+          <li class="nav__item" style="--i:3"><a class="nav__link" href="#skills">Skills</a></li>
+          <li class="nav__item" style="--i:4"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item" style="--i:5"><a class="nav__link" href="#contact">Contact</a></li>
+          <li class="nav__item" style="--i:6"><a class="nav__link nav__cta" href="#resume" id="nav-resume-btn">Resume</a></li>
+        </ul>
+        <a class="nav__mail" href="mailto:kmadnan20370@gmail.com">kmadnan20370@gmail.com</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =============================== HERO =============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+
+        <!-- EDIT: headline. Each .line is one row of the big text. Keep each line short. -->
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span>Building</span></span>
+          <span class="line"><span>My Way Into</span></span>
+          <span class="line"><span>Software.</span></span>
+        </h1>
+
+        <!-- Hero portrait integrated seamlessly into dark canvas (2D, borderless) -->
+        <div class="hero__portrait" id="hero-portrait">
+          <img 
+            class="hero__img" 
+            id="hero-img"
+            src="/adnan-sanim.png" 
+            onerror="this.onerror=null;this.src='/adnan-sanim.jpg'"
+            alt="Adnan Sanim" 
+            width="380" 
+            height="475" 
+            loading="eager" 
+            referrerpolicy="no-referrer"
+          >
+        </div>
+
+        <div class="hero__intro">
+          <!-- EDIT: short introduction about you -->
+          <h2 class="hero__greeting">HI,</h2>
+          <p class="lede">I'm <b><u>KM Adnan Sanim</u></b>, a student. I build web apps and systems tools, write a lot of tests, and enjoy finding out how things work underneath. I'm looking for internships and engineering opportunities.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">See my projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <!-- EDIT: quick facts. Change data-timezone to your own, e.g. "Europe/London", "America/New_York", "Asia/Kolkata" -->
+        <dl class="facts">
+          <div class="facts__row facts__row--status">
+            <dt class="visually-hidden">Availability</dt>
+            <dd><span class="status-dot" aria-hidden="true"></span>Open to internships and graduate roles</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Studying</dt>
+            <dd>BSc in Software Engineering, Daffodil International University</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Status</dt>
+            <dd>Undergraduate (Ongoing)</dd>
+          </div>
+          <div class="facts__row">
+            <dt>Local time</dt>
+            <dd>Dhaka, <span id="local-time" data-timezone="Asia/Dhaka">--:--</span></dd>
+          </div>
+        </dl>
+
+      </div>
+    </section>
+
+    <!-- ============================= PROJECTS ============================= -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="projects-title">Projects</h2>
+          <p class="section__note">Websites and digital projects built with modern web tools and AI-assisted workflows.</p>
+        </div>
+
+        <div class="section__body">
+          <ul class="projects">
+
+            <li class="project is-open">
+              <h3 class="project__heading">
+                <button class="project__trigger" type="button" aria-expanded="true" aria-controls="project-restaurant">
+                  <span class="project__name">Hungry Town — Restaurant Website</span>
+                  <span class="project__summary">Modern food showcase with interactive menu & table reservation</span>
+                  <span class="project__year">2025</span>
+                  <span class="project__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="project__panel" id="project-restaurant" role="region" aria-label="Hungry Town Restaurant Website details">
+                <div class="project__panel-inner">
+                  <div class="project__content">
+                    <p>A full restaurant web experience created for Hungry Town to highlight signature dishes, dietary categories, and dining atmosphere. Features an interactive menu filter, table reservation interface, chef specials, and contact details.</p>
+                    <dl class="project__meta">
+                      <div><dt>Context</dt><dd>Food & hospitality web experience</dd></div>
+                      <div><dt>Stack</dt><dd>HTML5, Modern CSS, Responsive Grid, JavaScript</dd></div>
+                      <div><dt>Result</dt><dd>Responsive layout with high visual appeal and smooth mobile ordering navigation</dd></div>
+                    </dl>
+                    <p class="project__links">
+                      <a class="text-link" href="https://adnan-sanim.github.io/hungry-town/" target="_blank" rel="noopener noreferrer">Live preview</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <h3 class="project__heading">
+                <button class="project__trigger" type="button" aria-expanded="false" aria-controls="project-company">
+                  <span class="project__name">Pixelio — Company Website</span>
+                  <span class="project__summary">Professional corporate landing page for modern business services</span>
+                  <span class="project__year">2025</span>
+                  <span class="project__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="project__panel" id="project-company" role="region" aria-label="Pixelio Company Website details">
+                <div class="project__panel-inner">
+                  <div class="project__content">
+                    <p>A multi-section corporate website designed for Pixelio agency branding. Showcases company service packages, client feedback, project case studies, and an interactive contact inquiry form.</p>
+                    <dl class="project__meta">
+                      <div><dt>Context</dt><dd>Corporate branding & digital agency showcase</dd></div>
+                      <div><dt>Stack</dt><dd>HTML5, CSS3, Responsive Grid, JavaScript</dd></div>
+                      <div><dt>Result</dt><dd>Clean business presentation with high-contrast typography and clear call-to-actions</dd></div>
+                    </dl>
+                    <p class="project__links">
+                      <a class="text-link" href="https://adnan-sanim.github.io/pixelio/" target="_blank" rel="noopener noreferrer">Live preview</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <h3 class="project__heading">
+                <button class="project__trigger" type="button" aria-expanded="false" aria-controls="project-ecommerce">
+                  <span class="project__name">TechKitch — E-commerce Website</span>
+                  <span class="project__summary">Modern tech & kitchen gadget storefront with interactive product catalog</span>
+                  <span class="project__year">2025</span>
+                  <span class="project__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="project__panel" id="project-ecommerce" role="region" aria-label="TechKitch E-commerce Website details">
+                <div class="project__panel-inner">
+                  <div class="project__content">
+                    <p>A modern e-commerce web platform for tech accessories and kitchen essentials. Features dynamic product filtering, responsive shopping cart view, deal highlights, customer reviews, and a clean checkout layout.</p>
+                    <dl class="project__meta">
+                      <div><dt>Context</dt><dd>E-commerce & retail frontend development</dd></div>
+                      <div><dt>Stack</dt><dd>HTML5, Modern CSS, Flexbox & Grid, JavaScript</dd></div>
+                      <div><dt>Result</dt><dd>Fast product discovery, fluid interactive navigation, and mobile-first shopping UX</dd></div>
+                    </dl>
+                    <p class="project__links">
+                      <a class="text-link" href="https://adnan-sanim.github.io/techkitch/" target="_blank" rel="noopener noreferrer">Live preview</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <h3 class="project__heading">
+                <button class="project__trigger" type="button" aria-expanded="false" aria-controls="project-portfolio">
+                  <span class="project__name">Developer Portfolio</span>
+                  <span class="project__summary">Minimalist, dark-themed personal showcase built for GitHub Pages</span>
+                  <span class="project__year">2026</span>
+                  <span class="project__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="project__panel" id="project-portfolio" role="region" aria-label="Developer Portfolio details">
+                <div class="project__panel-inner">
+                  <div class="project__content">
+                    <p>This personal portfolio website, handcrafted with clean semantic HTML, modular CSS, and lightweight vanilla JavaScript. Zero framework bloat, fast load times, and ready to deploy straight to GitHub Pages.</p>
+                    <dl class="project__meta">
+                      <div><dt>Context</dt><dd>Personal identity & project showcase</dd></div>
+                      <div><dt>Stack</dt><dd>HTML5, Vanilla CSS, JavaScript</dd></div>
+                      <div><dt>Result</dt><dd>Fluid typography, interactive collapsible project drawer, and 100% lightweight</dd></div>
+                    </dl>
+                    <p class="project__links">
+                      <a class="text-link" href="#top">Live preview</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EXPERIENCE ============================ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="experience-title">Experience</h2>
+          <p class="section__note">Teaching background, continuous learning, and hands-on software exploration.</p>
+        </div>
+
+        <div class="section__body">
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__date">Present</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">Self-Directed Software Development</h3>
+                <p class="timeline__org">Independent Projects & Continuous Learning</p>
+                <p class="timeline__text">Transitioning into professional software engineering through dedicated project building. Focused on modern web fundamentals (HTML, CSS, JavaScript), responsive architecture, Git workflows, and building real-world functional websites.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2 Yrs (Ongoing)</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">Instructor & Educator</h3>
+                <p class="timeline__org">Academic Instruction & Mentorship</p>
+                <p class="timeline__text">Ongoing teaching and mentoring experience (2+ years). Responsible for structuring lesson plans, explaining complex concepts clearly, and fostering problem-solving mindsets in students. Developed strong communication, leadership, and structured analytical thinking.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">Professional</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">Industry Experience</h3>
+                <p class="timeline__org">Open to First Role</p>
+                <p class="timeline__text">Currently seeking an entry-level software engineering role, internship, or junior developer position to apply my web development skills, discipline, and rapid-learning mindset in a collaborative engineering team.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ EDUCATION ============================= -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="education-title">Education</h2>
+          <p class="section__note">Academic background, technical societies, and campus engagement.</p>
+        </div>
+
+        <div class="section__body">
+          <ol class="timeline">
+            <li class="timeline__item">
+              <p class="timeline__date">Ongoing</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">BSc in Software Engineering</h3>
+                <p class="timeline__org">Daffodil International University</p>
+                <div class="timeline__clubs">
+                  <p class="timeline__clubs-label">University Clubs &amp; Activities</p>
+                  <ul class="timeline__club-list">
+                    <li class="timeline__club-item">
+                      <span class="club-badge">Member</span>
+                      <a class="timeline__club-link" href="https://www.facebook.com/secdiu" target="_blank" rel="noopener noreferrer">
+                        <span><strong>Software Engineering Club</strong> &mdash; DIU</span>
+                        <svg class="club-external-icon" aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </li>
+                    <li class="timeline__club-item">
+                      <span class="club-badge">Member</span>
+                      <a class="timeline__club-link" href="https://www.facebook.com/profile.php?id=61561800885287" target="_blank" rel="noopener noreferrer">
+                        <span><strong>Software Quality Assurance &amp; Testing Club</strong> &mdash; DIU</span>
+                        <svg class="club-external-icon" aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2023 &ndash; 2025</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">Higher Secondary Certificate (HSC)</h3>
+                <p class="timeline__org">Adamjee Cantonment College</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__date">2021 &ndash; 2023</p>
+              <div class="timeline__content">
+                <h3 class="timeline__role">Secondary School Certificate (SSC)</h3>
+                <p class="timeline__org">Ghatail Cantonment Public School &amp; College</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SKILLS ============================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="skills-title">Skills</h2>
+          <p class="section__note">What I use most, and what I'm still learning. No progress bars, just honesty.</p>
+        </div>
+
+        <div class="section__body">
+          <!-- EDIT: change the group names and lists to match your own skills -->
+          <dl class="toolbox">
+            <div class="toolbox__group">
+              <dt>HTML &amp; CSS</dt>
+              <dd>Semantic HTML5, responsive CSS layout architecture, Flexbox, Grid, clean typography, and accessible page structure.</dd>
+            </div>
+            <div class="toolbox__group">
+              <dt>AI-assisted development</dt>
+              <dd>Building functional websites and apps using modern AI tools, prompt-driven prototyping, and rapid implementation.</dd>
+            </div>
+            <div class="toolbox__group">
+              <dt>Git &amp; GitHub</dt>
+              <dd>Repository management, uploading codebases, managing code updates, and publishing live websites using GitHub Pages.</dd>
+            </div>
+            <div class="toolbox__group">
+              <dt>Learning &bull; Programming &amp; Logic</dt>
+              <dd>JavaScript fundamentals, DOM manipulation for web interactivity, and frontend engineering principles.</dd>
+            </div>
+            <div class="toolbox__group">
+              <dt>Learning &bull; Software Engineering</dt>
+              <dd>Core computer science concepts, algorithms, and software development methodologies at Daffodil International University.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT =============================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap section__grid">
+        <div class="section__head">
+          <h2 id="about-title">About</h2>
+          <p class="section__note">Background, mindset, and what drives my work.</p>
+        </div>
+
+        <div class="section__body about">
+          <p class="about__lede">I'm an undergraduate software engineering student driven by curiosity for how modern digital experiences are built from the ground up.</p>
+          <p>My current focus is building solid fundamentals in core computer science and web technologies. I enjoy crafting clean, accessible markup, exploring responsive design, and leveraging AI-assisted tools to turn concepts into working prototypes quickly. Alongside technology, my ongoing experience in teaching has instilled in me a deep appreciation for structured problem solving, patience, and clear communication.</p>
+          <p>When I'm not studying or building projects, I spend my time mentoring students, keeping up with new developer tools, and experimenting with modern web design.</p>
+
+          <dl class="rows">
+            <div class="rows__row"><dt>Focus</dt><dd>Mastering core web fundamentals, responsive CSS, and software engineering principles</dd></div>
+            <div class="rows__row"><dt>Building</dt><dd>Clean, functional websites and interactive web prototypes using modern workflows</dd></div>
+            <div class="rows__row"><dt>Workflow</dt><dd>Pairing solid foundational code with AI-assisted productivity and continuous learning</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ============================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 class="contact__title" id="contact-title">Hiring for an internship or graduate role? I'd like to hear about it.</h2>
+
+        <!-- EDIT: your email (change it in both places: the link and the text) -->
+        <a class="contact__email" id="email-link" href="mailto:kmadnan20370@gmail.com">kmadnan20370@gmail.com</a>
+
+        <div class="contact__actions">
+          <button class="btn btn--primary" id="copy-email" type="button">Copy email</button>
+          <button class="btn btn--ghost" id="contact-resume-btn" type="button">View &amp; Download Resume</button>
+          <span class="visually-hidden" id="copy-status" role="status"></span>
+        </div>
+        <p class="contact__note">I reply within two working days.</p>
+
+        <!-- EDIT: your profile links -->
+        <ul class="socials">
+          <li>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
+              <span class="socials__brand">
+                <svg class="socials__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+                </svg>
+                <span class="socials__name">LinkedIn</span>
+              </span>
+              <svg class="socials__arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/kmadnansanim" target="_blank" rel="noopener noreferrer">
+              <span class="socials__brand">
+                <svg class="socials__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+                <span class="socials__name">GitHub</span>
+              </span>
+              <svg class="socials__arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/adnan.sanim.169909" target="_blank" rel="noopener noreferrer">
+              <span class="socials__brand">
+                <svg class="socials__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/>
+                </svg>
+                <span class="socials__name">Facebook</span>
+              </span>
+              <svg class="socials__arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/adnan.sanim/" target="_blank" rel="noopener noreferrer">
+              <span class="socials__brand">
+                <svg class="socials__icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+                <span class="socials__name">Instagram</span>
+              </span>
+              <svg class="socials__arrow" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="site-footer__copy">&copy; <span id="year">2026</span> Adnan Sanim.</p>
+
+      <ul class="site-footer__socials" aria-label="Social media profiles">
+        <li>
+          <a class="site-footer__link" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.4 9.74v-8.37H5.06v8.37h2.8z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="site-footer__link" href="https://github.com/kmadnansanim" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a class="site-footer__link" href="https://www.facebook.com/adnan.sanim.169909" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/>
+            </svg>
+            <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="site-footer__link" href="https://www.instagram.com/adnan.sanim/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            <span>Instagram</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="text-link" href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- =========================== RESUME MODAL =========================== -->
+  <dialog class="resume-modal" id="resume-modal" aria-labelledby="resume-modal-title">
+    <div class="resume-modal__inner">
+      <div class="resume-modal__toolbar">
+        <div class="resume-modal__meta">
+          <span class="resume-modal__badge">Curriculum Vitae</span>
+          <h2 class="resume-modal__title" id="resume-modal-title">Adnan Sanim &mdash; Resume</h2>
+        </div>
+        <div class="resume-modal__actions">
+          <button class="btn btn--primary resume-modal__btn" id="resume-print-btn" type="button">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download / Save as PDF</span>
+          </button>
+          <button class="icon-btn resume-modal__close" id="resume-close-btn" type="button" aria-label="Close resume viewer">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-modal__viewport">
+        <article class="resume-sheet" id="resume-sheet">
+          <header class="resume-sheet__header">
+            <div class="resume-sheet__title-group">
+              <h1 class="resume-sheet__name">Adnan Sanim</h1>
+              <p class="resume-sheet__role">Software Engineering Student &amp; Web Developer</p>
+            </div>
+            <ul class="resume-sheet__contact">
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Dhaka, Bangladesh</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <a href="mailto:kmadnan20370@gmail.com">kmadnan20370@gmail.com</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <a href="https://github.com/kmadnansanim" target="_blank" rel="noopener noreferrer">github.com/kmadnansanim</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 1 0 0-2.9 1.45 1.45 0 0 0 0 2.9m1.4 9.74v-8.37H5.06v8.37h2.8z"/></svg>
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95C18.05 21.45 22 17.19 22 12z"/></svg>
+                <a href="https://www.facebook.com/adnan.sanim.169909" target="_blank" rel="noopener noreferrer">facebook.com/adnan.sanim</a>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <a href="https://www.instagram.com/adnan.sanim/" target="_blank" rel="noopener noreferrer">instagram.com/adnan.sanim</a>
+              </li>
+            </ul>
+          </header>
+
+          <section class="resume-sheet__section">
+            <h2 class="resume-sheet__heading">Professional Summary</h2>
+            <p class="resume-sheet__text">
+              Curious and disciplined Software Engineering undergraduate at Daffodil International University with solid practical foundations in semantic HTML5, responsive CSS architecture, Git/GitHub workflows, and AI-assisted rapid web prototyping. Combines 2+ years of teaching experience with technical discipline, strong analytical problem-solving, and clear communication skills. Actively seeking opportunities to contribute as a junior developer or software engineering intern.
+            </p>
+          </section>
+
+          <section class="resume-sheet__section">
+            <h2 class="resume-sheet__heading">Technical Skills</h2>
+            <div class="resume-sheet__grid">
+              <div class="resume-sheet__group">
+                <h3 class="resume-sheet__label">Frontend &amp; Styling</h3>
+                <p>Semantic HTML5, CSS3, Flexbox, CSS Grid, Responsive Web Design, Mobile-First Layouts, Clean Typography, Accessible DOM Hierarchy</p>
+              </div>
+              <div class="resume-sheet__group">
+                <h3 class="resume-sheet__label">Tools &amp; Deployment</h3>
+                <p>Git, GitHub, Repository Management, Branching, Code Updates, GitHub Pages Deployment, VS Code</p>
+              </div>
+              <div class="resume-sheet__group">
+                <h3 class="resume-sheet__label">Modern Prototyping</h3>
+                <p>AI-assisted development, prompt-driven UI prototyping, accelerated development workflows, iterative build cycles</p>
+              </div>
+              <div class="resume-sheet__group">
+                <h3 class="resume-sheet__label">Learning &amp; Fundamentals</h3>
+                <p>JavaScript fundamentals, DOM manipulation, Core Computer Science, Software Engineering methodologies</p>
+              </div>
+              <div class="resume-sheet__group">
+                <h3 class="resume-sheet__label">Interpersonal &amp; Leadership</h3>
+                <p>Technical instruction, patience, structured analytical thinking, mentorship, team collaboration, continuous learning</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume-sheet__section">
+            <h2 class="resume-sheet__heading">Education</h2>
+            <div class="resume-sheet__entries">
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">BSc in Software Engineering</h3>
+                  <span class="resume-entry__date">Ongoing</span>
+                </div>
+                <p class="resume-entry__subtitle">Daffodil International University &mdash; Dhaka, Bangladesh</p>
+                <p class="resume-entry__desc">Focusing on software engineering principles, algorithms, data structures, and core computer science foundations.</p>
+                <p class="resume-entry__desc" style="margin-top: 0.35rem;"><strong>Clubs &amp; Societies:</strong> Member, <a class="text-link" href="https://www.facebook.com/secdiu" target="_blank" rel="noopener noreferrer">Software Engineering Club (DIU)</a> &bull; Member, <a class="text-link" href="https://www.facebook.com/profile.php?id=61561800885287" target="_blank" rel="noopener noreferrer">Software Quality Assurance &amp; Testing Club (DIU)</a></p>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Higher Secondary Certificate (HSC)</h3>
+                  <span class="resume-entry__date">2023 &ndash; 2025</span>
+                </div>
+                <p class="resume-entry__subtitle">Adamjee Cantonment College &mdash; Dhaka, Bangladesh</p>
+                <p class="resume-entry__desc">Science curriculum focusing on mathematics, physics, and analytical problem-solving.</p>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Secondary School Certificate (SSC)</h3>
+                  <span class="resume-entry__date">2021 &ndash; 2023</span>
+                </div>
+                <p class="resume-entry__subtitle">Ghatail Cantonment Public School &amp; College</p>
+                <p class="resume-entry__desc">Science background with early foundations in mathematics and science disciplines.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="resume-sheet__section">
+            <h2 class="resume-sheet__heading">Featured Projects</h2>
+            <div class="resume-sheet__entries">
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Developer Portfolio Website</h3>
+                  <span class="resume-entry__date">2026</span>
+                </div>
+                <p class="resume-entry__subtitle">HTML5 &bull; Vanilla CSS &bull; Vanilla JavaScript &bull; GitHub Pages</p>
+                <ul class="resume-entry__bullets">
+                  <li>Handcrafted a high-performance, dark-themed responsive portfolio with accessible structure and zero framework dependencies.</li>
+                  <li>Engineered interactive collapsible project drawers, dynamic local time integration, and an in-browser printable ATS resume viewer.</li>
+                  <li>Deployed and maintained live on GitHub Pages with automated repository updates.</li>
+                </ul>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Restaurant Web Platform</h3>
+                  <span class="resume-entry__date">2025</span>
+                </div>
+                <p class="resume-entry__subtitle">HTML5 &bull; Modern CSS &bull; JavaScript</p>
+                <ul class="resume-entry__bullets">
+                  <li>Developed an interactive web experience featuring signature dish showcase, dietary category filtering, and an online table reservation interface.</li>
+                  <li>Implemented mobile-first ordering navigation and fluid responsive layouts for cross-device usability.</li>
+                </ul>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Corporate Business Website</h3>
+                  <span class="resume-entry__date">2025</span>
+                </div>
+                <p class="resume-entry__subtitle">HTML5 &bull; Responsive CSS Grid &bull; JavaScript</p>
+                <ul class="resume-entry__bullets">
+                  <li>Architected a multi-section corporate landing page showcasing service packages, testimonials, project case studies, and an interactive contact form.</li>
+                  <li>Delivered high-contrast visual hierarchy and conversion-focused call-to-action sections.</li>
+                </ul>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">TechKitch &mdash; E-commerce Web Platform</h3>
+                  <span class="resume-entry__date">2025</span>
+                </div>
+                <p class="resume-entry__subtitle">HTML5 &bull; Modern CSS &bull; Flexbox &amp; Grid &bull; JavaScript</p>
+                <ul class="resume-entry__bullets">
+                  <li>Built a responsive gadget storefront with dynamic product filtering, cart layout, and streamlined checkout UX.</li>
+                  <li>Ensured cross-browser compatibility and rapid load performance for mobile and desktop shoppers.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="resume-sheet__section">
+            <h2 class="resume-sheet__heading">Experience &amp; Leadership</h2>
+            <div class="resume-sheet__entries">
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Academic Instructor &amp; Educator</h3>
+                  <span class="resume-entry__date">2+ Years (Ongoing)</span>
+                </div>
+                <p class="resume-entry__subtitle">Academic Instruction &amp; Student Mentorship</p>
+                <ul class="resume-entry__bullets">
+                  <li>Instructed and mentored students in mathematics and scientific problem-solving with tailored learning plans.</li>
+                  <li>Synthesized complex analytical topics into intuitive, easy-to-grasp explanations, dramatically improving student comprehension.</li>
+                  <li>Refined strong public communication, patience, leadership, and structured analytical thought processes.</li>
+                </ul>
+              </article>
+
+              <article class="resume-entry">
+                <div class="resume-entry__header">
+                  <h3 class="resume-entry__title">Self-Directed Software Engineering</h3>
+                  <span class="resume-entry__date">Present</span>
+                </div>
+                <p class="resume-entry__subtitle">Independent Projects &amp; Continuous Exploration</p>
+                <ul class="resume-entry__bullets">
+                  <li>Actively building and shipping web projects, focusing on writing clean, semantic HTML and modular CSS.</li>
+                  <li>Practicing modern Git version control, branch management, and continuous live deployments to GitHub.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
+
